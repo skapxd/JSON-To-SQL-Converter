@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://www.convertjson.com/json-to-sql.htm -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Copyright 2017-2021 ConvertJson.com -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Convert JSON to SQL database script">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>JSON To SQL Converter</title>
+    <script src="./JSON To SQL Converter_files/underscore-min.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/blob.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/filesaver.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/json2.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/strsup.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/localread.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/csvparse.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/csvsup.js.descarga"></script>
+    <link rel="stylesheet" href="./JSON To SQL Converter_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./JSON To SQL Converter_files/bootstrap.min.css">
+    <script src="./JSON To SQL Converter_files/jquery.min.js.descarga" type="text/javascript"></script>
+    <script src="./JSON To SQL Converter_files/bootstrap.min.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/jQuery-csv.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/alasql.min.js.descarga"></script>
+    <script src="./JSON To SQL Converter_files/xlsx.full.min.js.descarga"></script>
+    <link rel="stylesheet" href="./JSON To SQL Converter_files/custom.css">
+    <link rel="stylesheet" href="./JSON To SQL Converter_files/nav.css">
+
+    <script type="text/javascript">
+        var _0x57f6 = ['chkOption2', 'dualNeeded', 'dropTable', 'length', 'alert', 'stringify', '19qWCBzK', 'delimiter', '41503DUFHwX', 'dualName', 'Table\x20Name\x20required!', 'useStringSub', 'useNullAsNull', 'replace', 'chkTableNotExists', 'chkBroke', 'useTerseValuesSize', 'fname', 'newlines', '572HRompp', 'chkUseTerseValues', 'isFirstRowHeader', 'finc', 'txta', 'txtArrayName', 'chkHeaderLower', 'tabname', 'createNotExists', '57026JyEcsJ', 'Field1', 'charAt', 'GdGiU', 'chkReplace', 'nameWrapper', 'chkDual', 'btnRun', 'sTOZE', 'headers', 'selBatch', 'Invalid\x20JSON\x20entered.', '153060vehzDi', 'click', 'otdkg', 'innerHTML', 'focus', 'getElementById', '1546yMGRBT', 'divOptions', 'mySortNeeded', 'Warning\x20-\x20you\x20have\x20no\x20fields\x20selected\x20for\x20inclusion.', '1uVSjqK', 'chkTable', 'txeBO', '12655PESJQX', 'txtDual', 'prevColumnsFound', 'Array\x20name\x20or\x20JSON\x20not\x20valid', 'Invalid\x20JSON\x20entered\x20or\x20JSON\x20expression\x20', 'noBreaks', '\x20not\x20valid.', 'dualTableName', '321564qCxVBD', 'trim', 'maxColumnsFound', 'insertAfterText', 'chkTableExists', '111OzhmFg', 'value', 'separator', 'checked', 'txt1', 'createTable', 'fromObjects', 'parse', 'kcmDS', '547iXacld', 'chkDropTable', 'error\x20e=', '2xfniGh', 'XPHFY', 'Description', 'csv', 'autodetect', 'batchSize']; var _0x2f36 = function (_0x29133c, _0x557c0d) { _0x29133c = _0x29133c - 0x8d; var _0x57f6f3 = _0x57f6[_0x29133c]; return _0x57f6f3; }; (function (_0x1fa5f2, _0x2e9f7f) { var _0x501589 = _0x2f36; while (!![]) { try { var _0x2ed478 = parseInt(_0x501589(0xb6)) + -parseInt(_0x501589(0xa1)) * parseInt(_0x501589(0xd9)) + parseInt(_0x501589(0xc3)) * -parseInt(_0x501589(0x94)) + -parseInt(_0x501589(0xbc)) * parseInt(_0x501589(0xd0)) + parseInt(_0x501589(0xc0)) * parseInt(_0x501589(0xaa)) + parseInt(_0x501589(0x96)) + parseInt(_0x501589(0xdc)) * parseInt(_0x501589(0xcb)); if (_0x2ed478 === _0x2e9f7f) break; else _0x1fa5f2['push'](_0x1fa5f2['shift']()); } catch (_0x33dade) { _0x1fa5f2['push'](_0x1fa5f2['shift']()); } } }(_0x57f6, 0x29736)); function assignText(_0x2a7de2) { var _0xdf643 = _0x2f36; if (_0x2a7de2 == null) _0x2a7de2 = document[_0xdf643(0xbb)](_0xdf643(0xd4))[_0xdf643(0xd1)]; else document['getElementById'](_0xdf643(0xd4))['value'] = _0x2a7de2; try { var _0x111d7f = []; _0x111d7f = arrayFrom(JSON[_0xdf643(0xd7)](_0x2a7de2)); var _0x51d409 = []; for (var _0x10360c in _0x111d7f) { if (_0xdf643(0xad) !== _0xdf643(0xad)) { function _0x3f76a5() { _0x4b3e03[_0x23c834['length']] = _0xa6caff(_0xa0c11f[_0x585f61]); } } else _0x51d409[_0x51d409[_0xdf643(0x91)]] = parse_object(_0x111d7f[_0x10360c]); } var _0x4c2fae = {}; _0x4c2fae[_0xdf643(0xd2)] = ',', _0x4c2fae[_0xdf643(0xb3)] = !![], _0x4c2fae[_0xdf643(0xc8)] = ![]; var _0x3182cc = $['csv'][_0xdf643(0xd6)](_0x51d409, _0x4c2fae); if (_0x4c2fae[_0xdf643(0xb3)] && (_0x3182cc['charAt'](0x0) === '\x0a' || _0x3182cc[_0xdf643(0xac)](0x0) === '\x0d')) _0x3182cc = _0xdf643(0xab) + _0x3182cc; CSV['isFirstRowHeader'] = !![], CSV['delimiter'] = ',', CSV[_0xdf643(0xe0)] = ![], CSV[_0xdf643(0x99)] = !![], CSV[_0xdf643(0xd7)](_0x3182cc), document[_0xdf643(0xbb)](_0xdf643(0xbd))['innerHTML'] = sqlOptions(CSV), setOptions(CSV), CSV[_0xdf643(0xc5)] = CSV['maxColumnsFound'], document[_0xdf643(0xbb)](_0xdf643(0xb1))['click'](); } catch (_0x1eba69) { alert(_0xdf643(0xdb) + _0x1eba69); } } function runit(_0x533f0f, _0x34a5c5) { var _0x16d914 = _0x2f36, _0x516973 = document[_0x16d914(0xbb)](_0x16d914(0xd4))['value'], _0x24c943 = document['getElementById']('chkBroke')[_0x16d914(0xd3)], _0x540c69 = document[_0x16d914(0xbb)](_0x16d914(0xa6))['value'], _0x233b6d = document['getElementById'](_0x16d914(0x8e))[_0x16d914(0xd3)], _0x19611c = null, _0x4bbb4b = ''; if (_0x516973['trim']() != '') { if (_0x24c943 && _0x540c69 != '') try { _0x19611c = JSON[_0x16d914(0xd7)](_0x516973), _0x19611c = eval(_0x540c69), _0x516973 = JSON[_0x16d914(0x93)](_0x19611c, null, 0x4); } catch (_0x15fd2d) { alert(_0x16d914(0xc6)); return; } if (!_0x233b6d) try { var _0x3514a6 = []; _0x3514a6 = arrayFrom(JSON[_0x16d914(0xd7)](_0x516973)); var _0x46f428 = []; for (var _0x3de5cd in _0x3514a6) { _0x46f428[_0x46f428[_0x16d914(0x91)]] = parse_object(_0x3514a6[_0x3de5cd]); } var _0x19eea5 = {}; _0x19eea5[_0x16d914(0xd2)] = ',', _0x19eea5[_0x16d914(0xb3)] = !![], _0x19eea5[_0x16d914(0xc8)] = ![], _0x4bbb4b = $[_0x16d914(0xdf)][_0x16d914(0xd6)](_0x46f428, _0x19eea5); if (_0x19eea5[_0x16d914(0xb3)] && (_0x4bbb4b[_0x16d914(0xac)](0x0) === '\x0a' || _0x4bbb4b[_0x16d914(0xac)](0x0) === '\x0d')) _0x4bbb4b = _0x16d914(0xab) + _0x4bbb4b; CSV[_0x16d914(0xa3)] = !![], CSV[_0x16d914(0x95)] = ',', CSV[_0x16d914(0xe0)] = ![], CSV[_0x16d914(0x99)] = !![], CSV['parse'](_0x4bbb4b), runsql(_0x533f0f, _0x34a5c5); return; } catch (_0x2716b9) { ; } else { if (_0x16d914(0xc2) !== _0x16d914(0xc2)) { function _0x1252cc() { var _0x4edb00 = _0x16d914; !_0x3fded9 ? (_0x4790fb(_0x21a21e), _0x3309f3('Invalid\x20JSON\x20entered.' + (_0x4a7afe[_0x4edb00(0xde)] ? _0x47c51f[_0x4edb00(0xde)] : ''))) : _0x4bed3d(_0x4edb00(0xc7) + _0x11f270 + _0x4edb00(0xc9)); } } else try { _0x4bbb4b = jsonToCsv(_0x516973, ',', !![], ![], ![]), CSV[_0x16d914(0xa3)] = !![], CSV[_0x16d914(0x95)] = ',', CSV[_0x16d914(0x99)] = !![], CSV[_0x16d914(0xd7)](_0x4bbb4b), runsql(_0x533f0f, _0x34a5c5); } catch (_0x50123f) { if (_0x16d914(0xb2) !== _0x16d914(0xdd)) !_0x24c943 ? (alert(_0x50123f), alert(_0x16d914(0xb5) + (_0x50123f['Description'] ? _0x50123f[_0x16d914(0xde)] : ''))) : alert(_0x16d914(0xc7) + _0x540c69 + _0x16d914(0xc9)); else { function _0x10739f() { var _0x431920 = _0x16d914; _0x3a4cef('Invalid\x20JSON\x20entered\x20or\x20JSON\x20expression\x20' + _0x57acce + _0x431920(0xc9)); } } } } } } function prettify(_0x4aa8eb) { return prettyJSON(_0x4aa8eb, 0x3); } function runExample(_0x4bf98d) { var _0x3393b1 = _0x2f36; document[_0x3393b1(0xbb)](_0x3393b1(0x9d))[_0x3393b1(0xd3)] = ![], assignText(getExampleJson(_0x4bf98d)); } function runsql(_0x3a1bf1, _0x5090ae) { var _0x1906a7 = _0x2f36, _0xa37165 = {}; _0xa37165[_0x1906a7(0x97)] = '', _0xa37165[_0x1906a7(0x8f)] = ![], _0xa37165[_0x1906a7(0x90)] = _0x5090ae[_0x1906a7(0xda)][_0x1906a7(0xd3)], _0xa37165[_0x1906a7(0xd5)] = _0x5090ae[_0x1906a7(0xc1)][_0x1906a7(0xd3)], _0xa37165['tableName'] = _0x5090ae[_0x1906a7(0xa8)][_0x1906a7(0xd1)][_0x1906a7(0xcc)](), CSV[_0x1906a7(0x99)] = _0xa37165[_0x1906a7(0x9a)] = !![], _0xa37165[_0x1906a7(0xa0)] = ![], _0xa37165['useReplace'] = _0x5090ae[_0x1906a7(0xae)][_0x1906a7(0xd3)], _0xa37165['dropExists'] = _0x5090ae[_0x1906a7(0xcf)][_0x1906a7(0xd3)], _0xa37165[_0x1906a7(0xa9)] = _0x5090ae[_0x1906a7(0x9c)][_0x1906a7(0xd3)], _0xa37165[_0x1906a7(0xce)] = _0x5090ae['txtInsertText'][_0x1906a7(0xd1)], _0xa37165['useTerseValues'] = _0x5090ae[_0x1906a7(0xa2)]['checked'], _0xa37165[_0x1906a7(0x9e)] = document[_0x1906a7(0xbb)]('txtUseTerseValuesSize')[_0x1906a7(0xd1)]['trim'](), _0xa37165[_0x1906a7(0x8d)] = document[_0x1906a7(0xbb)](_0x1906a7(0xb4))['value']; if (_0x5090ae['tabname'][_0x1906a7(0xd1)]['trim']() == '') return window[_0x1906a7(0x92)](_0x1906a7(0x98)), _0x5090ae[_0x1906a7(0xa8)][_0x1906a7(0xba)](), ![]; if (CSV[_0x1906a7(0xbe)]) parseAndOptions(CSV); (_0x3a1bf1 == 'S' || _0x3a1bf1 == 'M') && (document[_0x1906a7(0xbb)](_0x1906a7(0xb0))['checked'] && (_0xa37165[_0x1906a7(0xca)] = document[_0x1906a7(0xbb)](_0x1906a7(0xc4))[_0x1906a7(0xd1)], _0xa37165[_0x1906a7(0x8f)] = !![])), document[_0x1906a7(0xbb)](_0x1906a7(0xa5))['value'] = csvToSql(CSV, _0x3a1bf1, _0xa37165), includedCount() === 0x0 && document[_0x1906a7(0xbb)]('txt1')['value'] != '' && window[_0x1906a7(0x92)](_0x1906a7(0xbf)); } function setColNames(_0x4933d5, _0x51d99d) { var _0x5007dd = _0x2f36, _0x33ce9f, _0x41f063; for (_0x33ce9f = 0x0; _0x33ce9f < CSV[_0x5007dd(0xcd)]; _0x33ce9f++) { _0x41f063 = document[_0x5007dd(0xbb)]('fname' + (_0x33ce9f + 0x1)); if (!_0x41f063) continue; if (_0x4933d5) _0x41f063[_0x5007dd(0xd1)] = _0x41f063[_0x5007dd(0xd1)]['toUpperCase'](); else { if (_0x51d99d) _0x41f063[_0x5007dd(0xd1)] = _0x41f063['value']['toLowerCase'](); } } } function includedCount() { var _0x58e50f = _0x2f36, _0x2a3311, _0x5e16d0, _0x2765f1 = 0x0; for (_0x2a3311 = 0x0; _0x2a3311 < CSV[_0x58e50f(0xcd)]; _0x2a3311++) { _0x5e16d0 = document[_0x58e50f(0xbb)](_0x58e50f(0xa4) + (_0x2a3311 + 0x1)); if (!_0x5e16d0) continue; if (_0x5e16d0['checked']) _0x2765f1++; } return _0x2765f1; } function namesUpper(_0x3e795f) { var _0x393c0f = _0x2f36; if (_0x3e795f) document[_0x393c0f(0xbb)](_0x393c0f(0xa7))[_0x393c0f(0xd3)] = ![]; parseAndOptions(CSV), setColNames(!![], ![]); } function namesLower(_0x5143e6) { var _0x118342 = _0x2f36; if (_0x5143e6) document[_0x118342(0xbb)]('chkHeaderUpper')[_0x118342(0xd3)] = ![]; parseAndOptions(CSV), setColNames(![], !![]); } function wrapFieldNames(_0x2ba68d) { var _0x48c2c0 = _0x2f36, _0x14d7d6 = radiovalue(_0x2ba68d[_0x48c2c0(0xaf)]), _0x55f271, _0x30fa91, _0x2d295b, _0x4ea7c8, _0x2dbffd = document[_0x48c2c0(0xbb)]('chkWrapFields')[_0x48c2c0(0xd3)]; for (_0x2d295b = 0x0; _0x2d295b < CSV[_0x48c2c0(0xcd)]; _0x2d295b++) { _0x4ea7c8 = document[_0x48c2c0(0xbb)](_0x48c2c0(0x9f) + (_0x2d295b + 0x1)); if (!_0x4ea7c8) continue; _0x4ea7c8[_0x48c2c0(0xd1)] = _0x4ea7c8[_0x48c2c0(0xd1)][_0x48c2c0(0x9b)](/^["`\[]/, ''), _0x4ea7c8[_0x48c2c0(0xd1)] = _0x4ea7c8[_0x48c2c0(0xd1)][_0x48c2c0(0x9b)](/["`\]]$/, ''); } if (_0x2dbffd) { _0x14d7d6 == '`' || _0x14d7d6 == '\x22' ? _0x55f271 = _0x30fa91 = _0x14d7d6 : (_0x55f271 = '[', _0x30fa91 = ']'); for (_0x2d295b = 0x0; _0x2d295b < CSV['maxColumnsFound']; _0x2d295b++) { if (_0x48c2c0(0xd8) === _0x48c2c0(0xb8)) { function _0x5c47b3() { var _0x577186 = _0x48c2c0, _0x51b096 = []; _0x51b096 = _0x509840(_0x82a728['parse'](_0x1c33ca)); var _0x84a5cf = []; for (var _0xea9e79 in _0x51b096) { _0x84a5cf[_0x84a5cf[_0x577186(0x91)]] = _0x5d730f(_0x51b096[_0xea9e79]); } var _0x293c87 = {}; _0x293c87[_0x577186(0xd2)] = ',', _0x293c87['headers'] = !![], _0x293c87[_0x577186(0xc8)] = ![]; var _0x423d6a = _0x4fe14e[_0x577186(0xdf)]['fromObjects'](_0x84a5cf, _0x293c87); if (_0x293c87[_0x577186(0xb3)] && (_0x423d6a[_0x577186(0xac)](0x0) === '\x0a' || _0x423d6a['charAt'](0x0) === '\x0d')) _0x423d6a = _0x577186(0xab) + _0x423d6a; _0x24b564['isFirstRowHeader'] = !![], _0x43272c[_0x577186(0x95)] = ',', _0x4bf3ba[_0x577186(0xe0)] = ![], _0x1cac5a[_0x577186(0x99)] = !![], _0x54aba9[_0x577186(0xd7)](_0x423d6a), _0x3417d5[_0x577186(0xbb)](_0x577186(0xbd))[_0x577186(0xb9)] = _0x73479(_0x4990ae), _0x3e05ad(_0x59e769), _0x74375c[_0x577186(0xc5)] = _0x259142['maxColumnsFound'], _0xd146e3[_0x577186(0xbb)](_0x577186(0xb1))[_0x577186(0xb7)](); } } else { _0x4ea7c8 = document['getElementById']('fname' + (_0x2d295b + 0x1)); if (!_0x4ea7c8) continue; _0x4ea7c8[_0x48c2c0(0xd1)] = _0x4ea7c8[_0x48c2c0(0xd1)][_0x48c2c0(0x9b)](/^["`\[]/, ''), _0x4ea7c8['value'] = _0x4ea7c8['value'][_0x48c2c0(0x9b)](/["`\]]$/, ''), _0x4ea7c8[_0x48c2c0(0xd1)] = _0x55f271 + _0x4ea7c8[_0x48c2c0(0xd1)] + _0x30fa91; } } } }
+
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./JSON To SQL Converter_files/js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <nav id="header" style="text-align:center" class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a class="navbar-brand" href="https://www.convertjson.com/">ConvertJson.com</a> </li>
+                        <li>
+                            <a id="parentNav" class="dropdown-toggle" data-toggle="dropdown"
+                                href="https://www.convertjson.com/json-to-sql.htm#">From JSON<span
+                                    class="caret"></span></a>
+                            <ul id="childContainerNav" class="dropdown-menu center">
+                                <li><a id="childNav1" href="https://www.convertjson.com/json-to-xml.htm">JSON To XML</a>
+                                </li>
+                                <li><a id="childNav2" href="https://www.convertjson.com/json-to-html-table.htm">JSON To
+                                        HTML Table</a></li>
+                                <li><a id="childNav12" href="https://www.convertjson.com/json-to-sql.htm">JSON To
+                                        SQL</a></li>
+                                <li><a id="childNav3" href="https://www.convertjson.com/json-to-yaml.htm">JSON To
+                                        YAML</a></li>
+                                <li><a id="childNav4" href="http://convertcsv.com/json-to-csv.htm">JSON To CSV</a></li>
+                                <li><a id="childNav5" href="http://convertcsv.com/geojson-to-csv.htm">GeoJSON To CSV</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="parentNav" class="dropdown-toggle" data-toggle="dropdown"
+                                href="https://www.convertjson.com/json-to-sql.htm#">To JSON<span
+                                    class="caret"></span></a>
+                            <ul id="childContainerNav" class="dropdown-menu center">
+                                <li><a id="childNav6" href="http://convertcsv.com/csv-to-json.htm">CSV To JSON</a></li>
+                                <li><a id="childNav7" href="https://www.convertjson.com/xml-to-json.htm">XML To JSON</a>
+                                </li>
+                                <li><a id="childNav8" href="https://www.convertjson.com/fixed-width-to-json.htm">Flat
+                                        File to JSON</a></li>
+                                <li><a id="childNav9" href="https://www.convertjson.com/html-table-to-json.htm">HTML
+                                        Table To JSON</a></li>
+                                <li><a id="childNav10" href="http://convertcsv.com/sql-to-csv.htm">SQL To JSON</a></li>
+                                <li><a id="childNav11" href="https://www.convertjson.com/toml-to-json.htm">TOML To
+                                        JSON</a></li>
+                                <li><a id="childNav12" href="https://www.convertjson.com/yaml-to-json.htm">YAML To
+                                        JSON</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="parentNav" class="dropdown-toggle" data-toggle="dropdown"
+                                href="https://www.convertjson.com/json-to-sql.htm#">JSON Tools<span
+                                    class="caret"></span></a>
+                            <ul id="childContainerNav" class="dropdown-menu center">
+                                <li><a id="childNav17" href="https://www.convertjson.com/jsonlint.htm">JSON Lint</a>
+                                </li>
+                                <li><a id="childNav13" href="https://www.convertjson.com/json-viewer.htm">JSON
+                                        Viewer</a></li>
+                                <li><a id="childNav14" href="https://www.convertjson.com/json-formatter.htm">JSON
+                                        Formatter</a></li>
+                                <li><a id="childNav15" href="https://www.convertjson.com/json-path-list.htm">JSON Path
+                                        Analyzer</a></li>
+                                <li><a id="childNav16" href="https://www.convertjson.com/jsonpath-tester.htm">JSONPath
+                                        Tester</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://www.convertjson.com/">
+                    <div id="logo">
+                        <img width="250px" src="./JSON To SQL Converter_files/JsonLogo.png" alt="Home Page">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-9">
+                <div id="site-title">
+                    <h1>Convert JSON to SQL</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <script async="" src="./JSON To SQL Converter_files/f.txt"></script>
+                <!-- ResponsiveAd -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                    data-ad-slot="9209491414" data-ad-format="auto"><iframe id="aswift_1"
+                        style="height: 1px !important; max-height: 1px !important; max-width: 1px !important; width: 1px !important;"
+                        src="./JSON To SQL Converter_files/saved_resource.html"><iframe id="google_ads_frame0"
+                            src="./JSON To SQL Converter_files/saved_resource(1).html"></iframe></iframe></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                <br>
+                Use this tool to convert JSON into SQL. This tool works well with record like JSON objects in an array.
+                It will flatten nested objects.
+                <br>See also Convert <a href="https://convertcsv.com/sql-to-csv.htm">SQL to JSON</a>
+                <p></p>
+                <h3 class="headerBlue">Step 1: Select your input</h3>
+                <form id="frm1" name="frm1" class="form-inline" role="form" onsubmit="return false">
+                    <div class="form-group">
+                        <b>Option 1 - Choose JSON file</b>
+                        <input type="file" id="f1" class="form-control" onchange="loadTextFile(this,assignText)"
+                            title="Choose a local JSON file">
+                        Encoding <input type="text" id="txtEncoding" size="8" value=""
+                            onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)"
+                            title="Enter encoding for input file or empty for default">
+                        <br><b>Option 2 - Enter an URL</b> <input type="text" size="40" value="" name="url" id="url"
+                            class="form-control" title="Enter the URL of a web page"
+                            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                        <input type="button" id="btnUrl" class="btn btn-primary" value="Load URL"
+                            title="Load JSON via URL" onclick="loadURL(document.getElementById(&#39;url&#39;).value)">
+                        <br><b>Option 3 - paste into Text Box below</b><br>
+
+                        <textarea class="form-control" rows="10" cols="80" id="txt1" wrap="off" onchange="assignText()"
+                            onpaste="setTimeout(function(){ assignText() }, 10)"></textarea>
+                        <br><input type="button" class="btn btn-primary" value="Clear Input"
+                            onclick="window.location.reload(true)">
+                        <input type="button" class="btn btn-primary" value="Format JSON" title="JSON Pretty"
+                            onclick="document.getElementById(&#39;txt1&#39;).value=prettify(document.getElementById(&#39;txt1&#39;).value)">
+                        &nbsp; Examples:
+                        <input type="button" class="btn btn-primary" value="1" title="Load and run example"
+                            onclick="runExample(1)">
+                        <input type="button" class="btn btn-primary" value="2" title="Load and run example"
+                            onclick="runExample(2)">
+                        <input type="button" class="btn btn-primary" value="3" title="Load and run example"
+                            onclick="runExample(3)">
+                        <input type="button" class="btn btn-primary" value="4" title="Load and run example"
+                            onclick="runExample(4)">
+                        <input type="button" class="btn btn-primary" value="5" title="Load and run example"
+                            onclick="runExample(5)">
+                        <input type="button" class="btn btn-primary" value="6" title="Load JSON from web page"
+                            onclick="document.getElementById(&#39;chkBroke&#39;).checked=false;document.getElementById(&#39;url&#39;).value=&#39;http://date.jsontest.com&#39;;document.getElementById(&#39;btnUrl&#39;).click()">
+                        <br>
+
+
+
+
+                        <br>
+                        <h3 class="headerBlue">Step 2: Choose output options</h3>
+                        <hr class="noverticalspace">
+                        <fieldset class="scheduler-border" id="p4">
+                            <legend class="scheduler-border">Output Options</legend>
+
+                            <label><input type="checkbox" id="chkBroke" value="Y"> Not working?</label>
+                            If JSON variable A, name the array to convert:
+                            <input type="text" id="txtArrayName" size="20" value="A" title="ex. A.name">
+                            <br>
+                            <label><input id="chkOption2" type="checkbox"> Still not happy - try an alternative
+                                conversion</label>
+                            <br><br>
+                            NOTE - you can change the column names below by overwriting the Field Name value.<br>
+                            <label>
+                                <input type="checkbox" value="Y" id="chkWrapFields" name="chkWrapFields"
+                                    onclick="wrapFieldNames(this.form)">
+                                Enclose field names below with
+                            </label>
+                            <label><input type="radio" value="&quot;" name="nameWrapper" id="chkQuote" checked="checked"
+                                    onclick="wrapFieldNames(this.form)"> Quotes ("name")</label>
+                            &nbsp; <label><input type="radio" value="`" name="nameWrapper" id="chkBackTick"
+                                    onclick="wrapFieldNames(this.form)"> Backtick (`name`)</label>
+                            &nbsp; <label><input type="radio" value="[]" name="nameWrapper" id="chkBrackets"
+                                    onclick="wrapFieldNames(this.form)"> Brackets ([name])</label>
+
+                            <div id="divOptions"></div>
+                            <br><label>Schema.Table or View Name: <input type="text" name="tabname" id="tabname"
+                                    value="mytable" size="15" placeholder="Schema.Table_OR_View_Name"
+                                    onchange="this.value=this.value.trim().replace(/\s/g,&#39;_&#39;)"
+                                    title="Enter Schema.table or view name. Schema is optional."></label>
+                            <!--
+                  <label>Database Target
+                <select>
+                   <option>ANSI</option>
+                   <option>MySql</option>
+                   <option>Oracle</option>
+                   <option>Sql Server</option>
+                   <option>Sqlite</option>
+                </select></label>-->
+                            <br><label><input type="checkbox" name="chkDropTable" id="chkDropTable"
+                                    onclick="if (this.checked) this.form.chkTable.checked = true;"
+                                    title="Generate DROP TABLE/VIEW statement">Drop Table/View</label>
+                            &nbsp; <label><input type="checkbox" value="Y" name="chkTableExists" id="chkTableExists"
+                                    title="Add IF EXISTS clause - Sqlite/MySQL style"> IF EXISTS</label>
+                            <br>
+                            <label><input type="checkbox" name="chkTable" id="chkTable" checked="checked"
+                                    onclick="if (!this.checked) this.form.chkDropTable.checked = false;"
+                                    title="Generate CREATE TABLE or CREATE VIEW statement">Create Table/View</label>
+                            &nbsp; <label><input type="checkbox" value="Y" name="chkTableNotExists"
+                                    id="chkTableNotExists" title="Add IF NOT EXISTS clause - Sqlite/MySQL style"> IF NOT
+                                EXISTS</label>
+                            <br><label>
+                                Include Auto Increment Clause on single numeric Primary Key using
+                                <select id="selAutoIncrement" name="selAutoIncrement"
+                                    title="Add Auto Increment to the PRIMARY KEY">
+                                    <option value="">-- Choose --</option>
+                                    <option value="AUTO_INCREMENT">MySQL AUTO_INCREMENT</option>
+                                    <option value="IDENTITY(1,1)">Sql Server IDENTITY(1,1)</option>
+                                    <option value="AUTOINCREMENT">Access AUTOINCREMENT</option>
+                                </select>
+                            </label>
+                            <br>
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">For INSERT</legend>
+                                <label>
+                                    <input type="checkbox" name="chkReplace" id="chkReplace"
+                                        title="Instead of INSERT, use REPLACE">
+                                    Use REPLACE instead
+                                </label> <small>(REPLACE INTO tablename ....)</small>
+                                <br> <label>
+                                    <input type="checkbox" name="chkUseTerseValues" id="chkUseTerseValues"
+                                        title="Use one INSERT statement and VALUES clause on INSERT or REPLACE">
+                                    Use one INSERT/REPLACE statement with multiple VALUES clauses -
+                                </label>
+                                <label>
+                                    How many? <input type="text" size="2" id="txtUseTerseValuesSize" value=""
+                                        title="How many VALUES clauses per INSERT? Leave blank for ALL">
+                                </label>
+                                <br> <label>Add phrase after INSERT/UPDATE keyword: <input type="text"
+                                        name="txtInsertText" id="txtInsertText" size="30" placeholder="OR REPLACE"
+                                        title="Add this after INSERT or UPDATE keyword, i.e. OR IGNORE"></label>
+                                <small>(INSERT phrase INTO ...)</small>
+                            </fieldset>
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">For SELECT and MERGE</legend>
+                                <label>
+                                    <input type="checkbox" name="chkDual" id="chkDual" value=""
+                                        title="Extra table needed to SELECT from? (Yes for Oracle)">
+                                    System TABLE needed to SELECT from?
+                                </label>
+                                <label>Table Name: <input type="text" id="txtDual" size="10" maxlength="40" value="dual"
+                                        title="System Table like DUAL or sysibm.dual"></label>
+                                <br><label>
+                                    Batch how many rows together via UNION ALL?
+                                    <select id="selBatch" title="# of records grouped together in SELECT via UNION ALL">
+                                        <option value="" selected="">All</option>
+                                        <option value="1">1</option>
+                                        <option value="10">10</option>
+                                        <option value="100">100</option>
+                                        <option value="1000">1000</option>
+                                    </select>
+                                </label> <small>Valid if not creating VIEW for SELECT</small>
+                            </fieldset>
+                        </fieldset>
+                        <div>
+
+                            <h3 class="headerBlue">Step 3: Generate output</h3>
+                            <div class="row">
+                                <input type="button" id="btnRun" value="JSON To SQL Insert"
+                                    title="Convert JSON to SQL INSERT" onclick="runit(&#39;I&#39;,this.form)">
+                                <input type="button" value="JSON To SQL Update" title="Convert JSON to SQL UPDATE"
+                                    onclick="runit(&#39;U&#39;,this.form)">
+                                <input type="button" value="JSON To SQL Delete" title="Convert JSON to SQL DELETE"
+                                    onclick="runit(&#39;D&#39;, this.form)">
+                                <input type="button" value="JSON To SQL Merge" title="Convert JSON to SQL MERGE"
+                                    onclick="runit(&#39;M&#39;, this.form)">
+                                <input type="button" value="JSON To SQL Select"
+                                    title="Convert JSON to SQL SELECT Statements and optional CREATE VIEW"
+                                    onclick="runit(&#39;S&#39;, this.form)">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="txta" class="control-label">Result Data:</label>
+                                <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i
+                                        class="fa fa-clipboard"></i></button><br>
+                                <textarea id="txta" rows="15" cols="80" wrap="off" placeholder="Output Results"
+                                    class="form-control"></textarea>
+                            </div><br>
+                            <div class="form-group form-inline">
+                                <label>Save your result:</label>
+                                <input type="text" size="15" id="fn" value="convertcsv" class="form-control"
+                                    title="Enter filename without extension">.sql
+                                <input type="button" value="Download Result" class="btn btn-primary"
+                                    onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;sql&#39;)">
+                                <label title="End-of-Line">EOL: <select id="eol"
+                                        title="CRLF=Windows,LF=Unix/Linux/New Apple/Android">
+                                        <option value="">CRLF</option>
+                                        <option value="LF">LF</option>
+                                    </select></label><br>
+                            </div>
+
+                        </div>
+
+
+
+                        <div id="diva"></div>
+                        <!-- 728x90/320x50 sticky footer -->
+                        <div id="waldo-tag-9498"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <script async="" src="./JSON To SQL Converter_files/f.txt"></script>
+                                <!-- ResponsiveAd -->
+                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                                    data-ad-slot="9209491414" data-ad-format="auto"><iframe id="aswift_2"
+                                        style="height: 1px !important; max-height: 1px !important; max-width: 1px !important; width: 1px !important;"
+                                        src="./JSON To SQL Converter_files/saved_resource(2).html"><iframe
+                                            id="google_ads_frame1"
+                                            src="./JSON To SQL Converter_files/saved_resource(3).html"></iframe></iframe></ins>
+                                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="panel-footer">
+                            <script src="./JSON To SQL Converter_files/footer.js.descarga"></script>Copyright ©
+                            2015-2021 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights
+                            Reserved<span class="pull-right"> &nbsp; &nbsp; <a
+                                    href="http://www.convertcsv.com/contact.htm">Contact Us</a> &nbsp; <a
+                                    href="https://www.convertjson.com/terms-of-use.htm">Terms of Use</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

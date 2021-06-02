@@ -1,0 +1,4 @@
+// Write out standard footer and links
+document.write('Copyright &copy; 2015-2021 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights Reserved');
+document.write('<span class="pull-right"> &nbsp; &nbsp; <a href="http://www.convertcsv.com/contact.htm">Contact Us</a>');
+document.write(' &nbsp; <a href="/terms-of-use.htm">Terms of Use</a></span>')
